@@ -1,4 +1,5 @@
 import sys
+from player import Player
 
 def main_menu():
     print("""+------------------------------------------------------------+
@@ -41,6 +42,8 @@ def game_loop():
 
     if answer == "1":
         print "Generating Universe..."
+        name = str(raw_input("Enter your name: "))
+        player = Player(name)
     elif answer == "2":
         print "Loading Universe..."
     elif answer == "3":
