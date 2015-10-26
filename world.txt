@@ -1,0 +1,6 @@
+0 0 Room
+0 1 House
+1 1 Hill
+2 1 Room
+2 2 House
+2 1 Hill

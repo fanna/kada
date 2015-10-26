@@ -18,7 +18,7 @@ def main_menu():
 |X                                                          X|
 |X    A procedurally generated exploration text-adventure   X|
 |X                                                          X|
-|X                                                          X|
+|X                 "Vincit qui se vincit"                   X|
 |X                                                          X|
 |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX|
 +------------------------------------------------------------+
@@ -38,28 +38,46 @@ def main_menu():
 
 main_menu()
 
-def game_loop():
+def menu_loop():
     answer = str(raw_input(">"))
 
     if answer == "1":
         print "Generating Universe..."
-        input_loop()
+        tile = TileGenerator()
+        tile.generate_first()
+
+        game_loop()
     elif answer == "2":
         print "Loading Universe..."
     elif answer == "3":
         print "Not yet implemented!"
-        game_loop()
+        menu_loop()
     elif answer == "4":
         sys.exit("Quit")
     else:
         print "Please chose 1, 2, 3, or 4!"
+        menu_loop()
+
+def game_loop():
+        tile = TileGenerator()
+
+        player_input = str(raw_input(">"))
+
+        if player_input == "N":
+            tile.generate_north()
+        elif player_input == "S":
+            tile.generate_south()
+        elif player_input == "E":
+            tile.generate_east()
+        elif player_input == "W":
+            tile.generate_west()
+        else:
+            print "............."
+
+        game_input = GameInput(player_input)
+        game_input.input_parse(player_input)
+
         game_loop()
 
-def input_loop():
-        player_input = str(raw_input(">"))
-        game_input = GameInput(player_input)
-        game_input.input_parser(player_input)
-        input_loop()
-
-game_loop()
+menu_loop()
 
