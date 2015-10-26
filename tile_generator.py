@@ -65,3 +65,8 @@ class TileGenerator:
         world = open("world.txt", "a")
         world.write(tile_str + "\n")
         world.close()
+
+#need to implement parser so I can know which tile is generated
+    def parse(self):
+        with open("world.txt") as f:
+               world = f.readlines()

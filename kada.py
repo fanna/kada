@@ -1,6 +1,7 @@
 import sys
 from tile_generator import TileGenerator
 from game_input import GameInput
+from player import player
 
 def main_menu():
     print("""+------------------------------------------------------------+
@@ -62,15 +63,27 @@ def game_loop():
         tile = TileGenerator()
 
         player_input = str(raw_input(">"))
-
+#inner IFs are about to change -> they are checking if the tile exists or not
         if player_input == "N":
-            tile.generate_north()
+            if world.tile_exists(player.x, player.y):
+                print "exist"
+            else:
+                tile.generate_north()
         elif player_input == "S":
-            tile.generate_south()
+            if world.tile_exists(player.x, player.y):
+                print "exist"
+            else:
+                tile.generate_south()
         elif player_input == "E":
-            tile.generate_east()
+            if world.tile_exists(player.x, player.y):
+                print "exist"
+            else:
+                tile.generate_east()
         elif player_input == "W":
-            tile.generate_west()
+            if world.tile_exists(player.x, player.y):
+                print "exist"
+            else:
+                tile.generate_west()
         else:
             print "............."
 

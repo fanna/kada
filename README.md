@@ -1,5 +1,5 @@
 # kada
-```sh
+```
 +------------------------------------------------------------+
 |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX|
 |X                                                          X|
