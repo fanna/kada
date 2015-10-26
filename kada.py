@@ -1,5 +1,6 @@
 import sys
-from player import Player
+from tile_generator import TileGenerator
+from game_input import GameInput
 
 def main_menu():
     print("""+------------------------------------------------------------+
@@ -42,8 +43,7 @@ def game_loop():
 
     if answer == "1":
         print "Generating Universe..."
-        name = str(raw_input("Enter your name: "))
-        player = Player(name)
+        input_loop()
     elif answer == "2":
         print "Loading Universe..."
     elif answer == "3":
@@ -54,6 +54,12 @@ def game_loop():
     else:
         print "Please chose 1, 2, 3, or 4!"
         game_loop()
+
+def input_loop():
+        player_input = str(raw_input(">"))
+        game_input = GameInput(player_input)
+        game_input.input_parser(player_input)
+        input_loop()
 
 game_loop()
 
