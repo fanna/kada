@@ -5,7 +5,11 @@ from player import player
 
 class TileGenerator:
     def __init__(self):
-        self.tile_names = ["House", "Room", "Forest", "Hill"]
+        self.tile_names = ["House", "River", "Forest", "Hill", "Barn", "Castle",
+                           "Bridge", "Swamp", "Building", "Garden", "Factory",
+                           "Forest", "Forest", "Forest", "Forest", "Road",
+                           "Road", "Road", "Road", "Forest", "River",
+                           "Forest", "Road", "Plain", "Plain", "Plain"]
 
     def generate_first(self):
         name = random.choice(self.tile_names)
@@ -18,55 +22,23 @@ class TileGenerator:
         world.write(tile_str + "\n")
         world.close()
 
-    def generate_north(self):
-        name = random.choice(self.tile_names)
+    def generate_all(self):
+        for x in range(1, 351):
+            for y in range(1, 351):
+                name = random.choice(self.tile_names)
 
-        new_tile = Tile(player.x, player.y + 1, name)
+                new_tile = Tile(x, y, name)
 
-        tile_str = str(new_tile.x) + " " +  str(new_tile.y) + " " + str(new_tile.name)
-        print tile_str
+                tile_str = str(new_tile.x) + " " +  str(new_tile.y) + " " + str(new_tile.name)
 
-        world = open("world.txt", "a")
-        world.write(tile_str + "\n")
-        world.close()
+                world = open("world.txt", "a")
+                world.write(tile_str + "\n")
+                world.close()
 
-    def generate_south(self):
-        name = random.choice(self.tile_names)
+        print "[DONE]"
 
-        new_tile = Tile(player.x, player.y - 1, name)
-
-        tile_str = str(new_tile.x) + " " +  str(new_tile.y) + " " + str(new_tile.name)
-        print tile_str
-
-        world = open("world.txt", "a")
-        world.write(tile_str + "\n")
-        world.close()
-
-    def generate_east(self):
-        name = random.choice(self.tile_names)
-
-        new_tile = Tile(player.x + 1, player.y, name)
-
-        tile_str = str(new_tile.x) + " " +  str(new_tile.y) + " " + str(new_tile.name)
-        print tile_str
-
-        world = open("world.txt", "a")
-        world.write(tile_str + "\n")
-        world.close()
-
-    def generate_west(self):
-        name = random.choice(self.tile_names)
-
-        new_tile = Tile(player.x - 1, player.y, name)
-
-        tile_str = str(new_tile.x) + " " +  str(new_tile.y) + " " + str(new_tile.name)
-        print tile_str
-
-        world = open("world.txt", "a")
-        world.write(tile_str + "\n")
-        world.close()
-
-#need to implement parser so I can know which tile is generated
-    def parse(self):
+    def load_world(self):
         with open("world.txt") as f:
-               world = f.readlines()
+               tiles = f.readlines()
+               for tile in tiles:
+                   tile.split()

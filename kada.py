@@ -46,6 +46,7 @@ def menu_loop():
         print "Generating Universe..."
         tile = TileGenerator()
         tile.generate_first()
+        tile.generate_all()
 
         game_loop()
     elif answer == "2":
@@ -60,32 +61,7 @@ def menu_loop():
         menu_loop()
 
 def game_loop():
-        tile = TileGenerator()
-
         player_input = str(raw_input(">"))
-#inner IFs are about to change -> they are checking if the tile exists or not
-        if player_input == "N":
-            if world.tile_exists(player.x, player.y):
-                print "exist"
-            else:
-                tile.generate_north()
-        elif player_input == "S":
-            if world.tile_exists(player.x, player.y):
-                print "exist"
-            else:
-                tile.generate_south()
-        elif player_input == "E":
-            if world.tile_exists(player.x, player.y):
-                print "exist"
-            else:
-                tile.generate_east()
-        elif player_input == "W":
-            if world.tile_exists(player.x, player.y):
-                print "exist"
-            else:
-                tile.generate_west()
-        else:
-            print "............."
 
         game_input = GameInput(player_input)
         game_input.input_parse(player_input)
