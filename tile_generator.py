@@ -1,6 +1,5 @@
 import random
 from tile import Tile
-from game_input import GameInput
 from player import player
 
 class TileGenerator:
@@ -11,14 +10,25 @@ class TileGenerator:
                            "Road", "Road", "Road", "Forest", "River",
                            "Forest", "Road", "Plain", "Plain", "Plain", "Palace"]
 
+    def generate_first(self):
+        name = random.choice(self.tile_names)
+
+        new_tile = Tile(0, 0, name)
+
+        tile_str = str(new_tile.x) + str(new_tile.y) + " " + str(new_tile.name)
+
+        world = open("world.txt", "w")
+        world.write(tile_str + "\n")
+        world.close()
+
     def generate_all(self):
-        for x in range(0, 5):   #this goes from 1 to 351
-            for y in range(0, 5): #this goes from 1 to 351
+        for x in range(-5, 5):   #this goes from 1 to 351
+            for y in range(-5, 5): #this goes from 1 to 351
                 name = random.choice(self.tile_names)
 
                 new_tile = Tile(x, y, name)
 
-                tile_str = str(new_tile.x) + " " +  str(new_tile.y) + " " + str(new_tile.name)
+                tile_str = str(new_tile.x) + str(new_tile.y) + " " + str(new_tile.name)
 
                 world = open("world.txt", "a")
                 world.write(tile_str + "\n")
@@ -40,23 +50,6 @@ class TileGenerator:
         names = []
         world = self.load_world()
         for name in range(0, len(world)):
-            print world[name][2]
-
-        return names
-
-
-    def get_all_x(self):
-        x = []
-        world = self.load_world()
-        for name in range(0, len(world)):
-            print world[name][0]
-
-        return x
-
-    def get_all_y(self):
-        y = []
-        world = self.load_world()
-        for name in range(0, len(world)):
             print world[name][1]
 
-        return y
+        return names

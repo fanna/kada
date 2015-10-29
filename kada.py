@@ -45,6 +45,7 @@ def menu_loop():
     if answer == "1":
         print "Generating world..."
         tile = TileGenerator()
+        tile.generate_first()
         tile.generate_all()
 
         game_loop()

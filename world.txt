@@ -1,418 +1,101 @@
-0 0 Forest
-1 1 Building
-1 2 River
-1 3 Forest
-1 4 Road
-2 1 Forest
-2 2 Plain
-2 3 River
-2 4 Road
-3 1 Garden
-3 2 Road
-3 3 Road
-3 4 Swamp
-4 1 Castle
-4 2 Road
-4 3 Road
-4 4 Building
-0 0 Forest
-0 1 Forest
-0 2 Road
-0 3 Factory
-0 4 Forest
-1 0 Road
-1 1 Forest
-1 2 River
-1 3 Road
-1 4 Forest
-2 0 Plain
-2 1 Swamp
-2 2 Forest
-2 3 River
-2 4 Forest
-3 0 Factory
-3 1 Forest
-3 2 Forest
-3 3 Plain
-3 4 Forest
-4 0 Garden
-4 1 Bridge
-4 2 Factory
-4 3 Bridge
-4 4 Factory
-0 0 Building
-0 0 River
-0 1 Hill
-0 2 Road
-0 3 Building
-0 4 Road
-1 0 Forest
-1 1 Factory
-1 2 Bridge
-1 3 Garden
-1 4 Castle
-2 0 Forest
-2 1 Forest
-2 2 River
-2 3 Forest
-2 4 Forest
-3 0 Palace
-3 1 Hill
-3 2 Castle
-3 3 Plain
-3 4 Forest
-4 0 Forest
-4 1 Hill
-4 2 House
-4 3 Plain
-4 4 Palace
-0 0 River
-0 1 Road
-0 2 Garden
-0 3 Factory
-0 4 Factory
-1 0 Castle
-1 1 Road
-1 2 Forest
-1 3 Bridge
-1 4 River
-2 0 Barn
-2 1 River
-2 2 Castle
-2 3 River
-2 4 Forest
-3 0 Building
-3 1 Forest
-3 2 Barn
-3 3 Road
-3 4 Forest
-4 0 Plain
-4 1 Forest
-4 2 Building
-4 3 Forest
-4 4 Factory
-0 0 Palace
-0 1 Palace
-0 2 Forest
-0 3 Plain
-0 4 Road
-1 0 Road
-1 1 Forest
-1 2 Road
-1 3 Road
-1 4 Road
-2 0 Barn
-2 1 Road
-2 2 Forest
-2 3 Road
-2 4 Forest
-3 0 Bridge
-3 1 Building
-3 2 Forest
-3 3 Bridge
-3 4 Plain
-4 0 Road
-4 1 Forest
-4 2 Bridge
-4 3 Forest
-4 4 Road
-0 0 Forest
-0 1 River
-0 2 Road
-0 3 Forest
-0 4 Building
-1 0 Forest
-1 1 Road
-1 2 Road
-1 3 Hill
-1 4 Plain
-2 0 Barn
-2 1 Castle
-2 2 Building
-2 3 Forest
-2 4 River
-3 0 Forest
-3 1 Forest
-3 2 Forest
-3 3 Forest
-3 4 Castle
-4 0 Forest
-4 1 Factory
-4 2 Building
-4 3 Barn
-4 4 Bridge
-0 0 Road
-0 1 Palace
-0 2 Swamp
-0 3 Road
-0 4 Road
-1 0 House
-1 1 Barn
-1 2 River
-1 3 Forest
-1 4 Road
-2 0 Plain
-2 1 Factory
-2 2 Road
-2 3 Road
-2 4 Factory
-3 0 Bridge
-3 1 Road
-3 2 Road
-3 3 Plain
-3 4 Plain
-4 0 River
-4 1 Forest
-4 2 House
-4 3 Forest
-4 4 Swamp
-0 0 Plain
-0 1 Plain
-0 2 Plain
-0 3 Road
-0 4 Swamp
-1 0 Forest
-1 1 Barn
-1 2 Swamp
-1 3 Road
-1 4 Road
-2 0 Road
-2 1 Factory
-2 2 Palace
-2 3 Swamp
-2 4 Forest
-3 0 Forest
-3 1 Road
-3 2 Forest
-3 3 Castle
-3 4 Castle
-4 0 Plain
-4 1 Plain
-4 2 Barn
-4 3 Forest
-4 4 Plain
-0 0 River
-0 1 Road
-0 2 Garden
-0 3 Forest
-0 4 River
-1 0 Forest
-1 1 Forest
-1 2 River
-1 3 Road
-1 4 Plain
-2 0 Road
-2 1 Forest
-2 2 Plain
-2 3 Bridge
-2 4 Factory
-3 0 Road
-3 1 Plain
-3 2 Forest
-3 3 Factory
-3 4 Road
-4 0 Building
-4 1 Forest
-4 2 Forest
-4 3 Road
-4 4 River
-0 0 Garden
-0 1 Forest
-0 2 Swamp
-0 3 Forest
-0 4 Forest
-1 0 Palace
-1 1 Plain
-1 2 Factory
-1 3 Forest
-1 4 Plain
-2 0 Forest
-2 1 Plain
-2 2 Palace
-2 3 Garden
-2 4 House
-3 0 Forest
-3 1 House
-3 2 Castle
-3 3 Road
-3 4 Plain
-4 0 Palace
-4 1 Road
-4 2 Road
-4 3 Road
-4 4 Building
-0 0 Forest
-0 1 Road
-0 2 Swamp
-0 3 Building
-0 4 Swamp
-1 0 River
-1 1 Road
-1 2 Road
-1 3 Forest
-1 4 River
-2 0 Swamp
-2 1 Swamp
-2 2 Road
-2 3 Road
-2 4 Plain
-3 0 Forest
-3 1 House
-3 2 Bridge
-3 3 Road
-3 4 Plain
-4 0 Hill
-4 1 River
-4 2 River
-4 3 Forest
-4 4 Forest
-0 0 Barn
-0 1 Barn
-0 2 Bridge
-0 3 Swamp
-0 4 Palace
-1 0 Building
-1 1 Hill
-1 2 Forest
-1 3 Forest
-1 4 Factory
-2 0 Forest
-2 1 Swamp
-2 2 Road
-2 3 Garden
-2 4 Forest
-3 0 Garden
-3 1 Road
-3 2 Road
-3 3 Road
-3 4 Road
-4 0 House
-4 1 Road
-4 2 Hill
-4 3 Hill
-4 4 Plain
-0 0 Forest
-0 1 Road
-0 2 Garden
-0 3 Road
-0 4 Road
-1 0 Forest
-1 1 Forest
-1 2 Swamp
-1 3 River
-1 4 Barn
-2 0 Hill
-2 1 Road
-2 2 River
-2 3 Forest
-2 4 Road
-3 0 Plain
-3 1 House
-3 2 Forest
-3 3 Road
-3 4 Forest
-4 0 Plain
-4 1 Forest
-4 2 Plain
-4 3 Building
-4 4 Swamp
-0 0 Road
-0 1 Forest
-0 2 Hill
-0 3 River
-0 4 Palace
-1 0 Barn
-1 1 Road
-1 2 Building
-1 3 Swamp
-1 4 Road
-2 0 River
-2 1 Road
-2 2 River
-2 3 River
-2 4 Castle
-3 0 Road
-3 1 River
-3 2 Forest
-3 3 Forest
-3 4 Building
-4 0 Castle
-4 1 Road
-4 2 Road
-4 3 Plain
-4 4 Road
-0 0 Forest
-0 1 Forest
-0 2 Swamp
-0 3 Forest
-0 4 Forest
-1 0 Castle
-1 1 Palace
-1 2 Building
-1 3 Building
-1 4 House
-2 0 Plain
-2 1 Forest
-2 2 Plain
-2 3 Forest
-2 4 Plain
-3 0 Bridge
-3 1 Forest
-3 2 Bridge
-3 3 Forest
-3 4 River
-4 0 Swamp
-4 1 Forest
-4 2 House
-4 3 Road
-4 4 Barn
-0 0 Factory
-0 1 Barn
-0 2 Building
-0 3 Swamp
-0 4 Factory
-1 0 Forest
-1 1 River
-1 2 Plain
-1 3 Garden
-1 4 River
-2 0 Forest
-2 1 Forest
-2 2 Palace
-2 3 Road
-2 4 Forest
-3 0 Forest
-3 1 Hill
-3 2 Hill
-3 3 Plain
-3 4 Bridge
-4 0 Plain
-4 1 Plain
-4 2 Forest
-4 3 Forest
-4 4 Forest
-0 0 Road
-0 1 Hill
-0 2 Forest
-0 3 Forest
-0 4 Road
-1 0 Forest
-1 1 Forest
-1 2 Forest
-1 3 Swamp
-1 4 Road
-2 0 Garden
-2 1 Hill
-2 2 Road
-2 3 Palace
-2 4 Forest
-3 0 Forest
-3 1 Garden
-3 2 Plain
-3 3 Road
-3 4 Road
-4 0 Forest
-4 1 Swamp
-4 2 Road
-4 3 River
-4 4 Hill
+00 Forest
+-5-5 Forest
+-5-4 Forest
+-5-3 Barn
+-5-2 Forest
+-5-1 Plain
+-50 House
+-51 Plain
+-52 Forest
+-53 Bridge
+-54 River
+-4-5 Forest
+-4-4 Forest
+-4-3 Swamp
+-4-2 Plain
+-4-1 Road
+-40 Forest
+-41 House
+-42 Bridge
+-43 Road
+-44 Forest
+-3-5 Building
+-3-4 Bridge
+-3-3 Swamp
+-3-2 Bridge
+-3-1 Hill
+-30 Road
+-31 Road
+-32 River
+-33 Plain
+-34 Hill
+-2-5 Road
+-2-4 Plain
+-2-3 Swamp
+-2-2 Garden
+-2-1 Forest
+-20 Road
+-21 River
+-22 Road
+-23 Road
+-24 Hill
+-1-5 River
+-1-4 Road
+-1-3 Forest
+-1-2 Swamp
+-1-1 Forest
+-10 Road
+-11 Forest
+-12 Road
+-13 Road
+-14 Plain
+0-5 Forest
+0-4 Building
+0-3 Castle
+0-2 Forest
+0-1 Building
+00 River
+01 Road
+02 Forest
+03 Palace
+04 Plain
+1-5 Road
+1-4 Plain
+1-3 Forest
+1-2 Forest
+1-1 Road
+10 River
+11 Bridge
+12 Forest
+13 River
+14 Bridge
+2-5 Forest
+2-4 Factory
+2-3 Road
+2-2 Forest
+2-1 Forest
+20 Building
+21 River
+22 Road
+23 Swamp
+24 Forest
+3-5 Road
+3-4 Forest
+3-3 Hill
+3-2 Palace
+3-1 Forest
+30 Forest
+31 Forest
+32 Forest
+33 Bridge
+34 Hill
+4-5 Forest
+4-4 House
+4-3 Forest
+4-2 Plain
+4-1 Road
+40 Forest
+41 Bridge
+42 Barn
+43 Plain
+44 Factory
