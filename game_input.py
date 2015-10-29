@@ -1,6 +1,8 @@
 import sys
 from player import player
 from tile_generator import TileGenerator
+from tile_generator import MIN_RANGE
+from tile_generator import MAX_RANGE
 
 class GameInput:
     def __init__(self, answer):
@@ -9,7 +11,10 @@ class GameInput:
     def input_parse(self, answer):
         tile = TileGenerator()
         if self.answer == "N":
-            player.y += 1
+            if player.y < MAX_RANGE:
+                player.y += 1
+            elif player.y >= MAX_RANGE:
+                player.y += 0
 
             current_pos = "End of the world"
 
@@ -22,7 +27,10 @@ class GameInput:
         #debug info
             print player.name + " is in " + current_pos
         elif self.answer == "S":
-            player.y -= 1
+            if player.y >= MIN_RANGE:
+                player.y -= 1
+            elif player.y < MIN_RANGE:
+                player.y += 0
 
             current_pos = "End of the world"
 
@@ -35,7 +43,10 @@ class GameInput:
         #debug info
             print player.name + " is in " + current_pos
         elif self.answer == "E":
-            player.x += 1
+            if player.x < MAX_RANGE:
+                player.x += 1
+            elif player.x >= MAX_RANGE:
+                player.x += 0
 
             current_pos = "End of the world"
 
@@ -48,7 +59,10 @@ class GameInput:
         #debug info
             print player.name + " is in " + current_pos
         elif self.answer == "W":
-            player.x -= 1
+            if player.x >= MIN_RANGE:
+                player.x -= 1
+            elif player.x < MIN_RANGE:
+                player.x += 0
 
             current_pos = "End of the world"
 

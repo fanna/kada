@@ -2,6 +2,9 @@ import random
 from tile import Tile
 from player import player
 
+MIN_RANGE = -5
+MAX_RANGE = 5
+
 class TileGenerator:
     def __init__(self):
         self.tile_names = ["House", "River", "Forest", "Hill", "Barn", "Castle",
@@ -22,8 +25,8 @@ class TileGenerator:
         world.close()
 
     def generate_all(self):
-        for x in range(-5, 5):   #this goes from 1 to 351
-            for y in range(-5, 5): #this goes from 1 to 351
+        for x in range(MIN_RANGE, MAX_RANGE):   #this goes from 1 to 351
+            for y in range(MIN_RANGE, MAX_RANGE): #this goes from 1 to 351
                 name = random.choice(self.tile_names)
 
                 new_tile = Tile(x, y, name)
