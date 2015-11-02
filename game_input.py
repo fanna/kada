@@ -24,8 +24,13 @@ class GameInput:
                 if sublist[0] == search:
                     current_pos = sublist[1]
                     break
+
         #debug info
             print player.name + " is in " + current_pos
+            print "On your north is " + self.north_of_you()
+            print "On your south is " + self.south_of_you()
+            print "On your east is " + self.east_of_you()
+            print "On your west is " + self.west_of_you()
         elif self.answer == "S":
             if player.y >= MIN_RANGE:
                 player.y -= 1
@@ -42,6 +47,10 @@ class GameInput:
                     break
         #debug info
             print player.name + " is in " + current_pos
+            print "On your north is " + self.north_of_you()
+            print "On your south is " + self.south_of_you()
+            print "On your east is " + self.east_of_you()
+            print "On your west is " + self.west_of_you()
         elif self.answer == "E":
             if player.x < MAX_RANGE:
                 player.x += 1
@@ -58,6 +67,10 @@ class GameInput:
                     break
         #debug info
             print player.name + " is in " + current_pos
+            print "On your north is " + self.north_of_you()
+            print "On your south is " + self.south_of_you()
+            print "On your east is " + self.east_of_you()
+            print "On your west is " + self.west_of_you()
         elif self.answer == "W":
             if player.x >= MIN_RANGE:
                 player.x -= 1
@@ -74,6 +87,10 @@ class GameInput:
                     break
         #debug info
             print player.name + " is in " + current_pos
+            print "On your north is " + self.north_of_you()
+            print "On your south is " + self.south_of_you()
+            print "On your east is " + self.east_of_you()
+            print "On your west is " + self.west_of_you()
         elif self.answer == "Q":
             sys.exit("Quit!")
         elif self.answer == "I":
@@ -118,3 +135,47 @@ class GameInput:
 |<><><><><><><><><><><vvv<><><><><><><><><><><>---------------------------------------+""")
 
         answer = str(raw_input("Inventory: "))
+
+    def north_of_you(self):
+        tile = TileGenerator()
+        world = tile.load_world()
+        north_tile = "None"
+        search = str(player.x) + str(player.y + 1)
+        for sublist in world:
+            if sublist[0] == search:
+                north_tile = sublist[1]
+                break
+        return north_tile
+
+    def south_of_you(self):
+        tile = TileGenerator()
+        world = tile.load_world()
+        south_tile= "None"
+        search = str(player.x) + str(player.y - 1)
+        for sublist in world:
+            if sublist[0] == search:
+                south_tile = sublist[1]
+                break
+        return south_tile
+
+    def east_of_you(self):
+        tile = TileGenerator()
+        world = tile.load_world()
+        east_tile = "None"
+        search = str(player.x + 1) + str(player.y)
+        for sublist in world:
+            if sublist[0] == search:
+                east_tile = sublist[1]
+                break
+        return east_tile
+
+    def west_of_you(self):
+        tile = TileGenerator()
+        world = tile.load_world()
+        west_tile = "None"
+        search = str(player.x - 1) + str(player.y)
+        for sublist in world:
+            if sublist[0] == search:
+                west_tile = sublist[1]
+                break
+        return west_tile
