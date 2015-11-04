@@ -48,9 +48,19 @@ def menu_loop():
         tile.generate_first()
         tile.generate_all()
 
+        save = open("save.txt", "w")
+        save.write("00" + "\n")
+        save.close()
+
         game_loop()
     elif answer == "2":
         print "Loading world..."
+        with open("save.txt") as f:
+            coordinates = str(f.readlines())
+            player.x = int(coordinates[2])
+            player.y = int(coordinates[3])
+        print "[DONE]"
+        game_loop()
     elif answer == "3":
         print "Not yet implemented!"
         menu_loop()

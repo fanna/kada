@@ -31,6 +31,10 @@ class GameInput:
             print "On your south is " + self.south_of_you()
             print "On your east is " + self.east_of_you()
             print "On your west is " + self.west_of_you()
+
+            save = open("save.txt", "w")
+            save.write(search+ "\n")
+            save.close()
         elif self.answer == "S":
             if player.y >= MIN_RANGE:
                 player.y -= 1
@@ -51,6 +55,10 @@ class GameInput:
             print "On your south is " + self.south_of_you()
             print "On your east is " + self.east_of_you()
             print "On your west is " + self.west_of_you()
+
+            save = open("save.txt", "w")
+            save.write(search + "\n")
+            save.close()
         elif self.answer == "E":
             if player.x < MAX_RANGE:
                 player.x += 1
@@ -71,6 +79,10 @@ class GameInput:
             print "On your south is " + self.south_of_you()
             print "On your east is " + self.east_of_you()
             print "On your west is " + self.west_of_you()
+
+            save = open("save.txt", "w")
+            save.write(search + "\n")
+            save.close()
         elif self.answer == "W":
             if player.x >= MIN_RANGE:
                 player.x -= 1
@@ -91,6 +103,10 @@ class GameInput:
             print "On your south is " + self.south_of_you()
             print "On your east is " + self.east_of_you()
             print "On your west is " + self.west_of_you()
+
+            save = open("save.txt", "w")
+            save.write(search + "\n")
+            save.close()
         elif self.answer == "Q":
             sys.exit("Quit!")
         elif self.answer == "I":
